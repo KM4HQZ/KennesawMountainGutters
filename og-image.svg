@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Kennesaw Mountain Gutters</title>
+  <desc id="desc">Local gutter cleaning in Kennesaw, Georgia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f1e3"/>
+      <stop offset="55%" stop-color="#e8dcc2"/>
+      <stop offset="100%" stop-color="#d9c4a0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#304c3d"/>
+      <stop offset="100%" stop-color="#1e2d25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1030" cy="110" r="150" fill="#d1a65a" fill-opacity="0.25"/>
+  <circle cx="160" cy="540" r="180" fill="#aa5b32" fill-opacity="0.14"/>
+  <rect x="70" y="70" width="1060" height="490" rx="34" fill="#fbf8f0" fill-opacity="0.82"/>
+  <rect x="110" y="115" width="132" height="132" rx="66" fill="url(#panel)"/>
+  <text x="176" y="195" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="52" font-weight="800" fill="#fff8f0">KM</text>
+  <text x="290" y="175" font-family="Cormorant Garamond, Georgia, serif" font-size="74" font-weight="700" fill="#1e2d25">Kennesaw Mountain Gutters</text>
+  <text x="290" y="245" font-family="Manrope, Arial, sans-serif" font-size="32" font-weight="700" fill="#aa5b32">Gutter Cleaning in Kennesaw, Georgia</text>
+  <text x="110" y="350" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="700" fill="#304c3d">Clean gutters. Clear downspouts. Better protection for your home.</text>
+  <text x="110" y="410" font-family="Manrope, Arial, sans-serif" font-size="27" fill="#55655c">Serving Kennesaw, Marietta, Acworth, Woodstock, Powder Springs,</text>
+  <text x="110" y="448" font-family="Manrope, Arial, sans-serif" font-size="27" fill="#55655c">and nearby North Georgia communities.</text>
+  <rect x="110" y="485" width="360" height="46" rx="23" fill="#304c3d"/>
+  <text x="290" y="516" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="23" font-weight="800" fill="#fff8f0">Request a Free Quote</text>
+</svg>
