@@ -49,6 +49,30 @@ The practical flow is:
    - `FROM_EMAIL`
 4. Redeploy the project after secrets are added.
 
+## GitHub repo connection settings
+
+If you connect the GitHub repository directly in Cloudflare Pages, use these settings:
+
+1. Repository: `KM4HQZ/KennesawMountainGutters`
+2. Production branch: `main`
+3. Framework preset: `None`
+4. Build command: leave blank
+5. Build output directory: `.`
+6. Root directory: leave blank
+
+Cloudflare Pages will serve the static files from the repository root and pick up the Pages Function from `functions/api/quote.js` automatically.
+
+## Local Wrangler workflow
+
+This repository includes Wrangler as a local development dependency.
+
+1. Install dependencies with `npm install`
+2. Authenticate once with `npx wrangler login`
+3. Preview locally with `npm run dev`
+4. Direct deploy with `npm run deploy`
+
+The direct deploy path is optional. If you connect the GitHub repository in Cloudflare Pages, pushes to `main` are the cleaner long-term workflow.
+
 ## DNS and mailbox setup
 
 ### If you want a real `info@kennesawmountaingutters.com` mailbox in Proton

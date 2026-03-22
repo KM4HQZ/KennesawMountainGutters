@@ -1,0 +1,13 @@
+{
+  "name": "kennesaw-mountain-gutters",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Cloudflare Pages site for Kennesaw Mountain Gutters.",
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "deploy": "wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}
