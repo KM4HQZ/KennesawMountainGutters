@@ -7,3 +7,4 @@ Thumbs.db
 .env
 .env.*
 .dev.vars
+CLOUDFLARE_DEPLOYMENT.md
