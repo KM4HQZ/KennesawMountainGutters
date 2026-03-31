@@ -72,6 +72,14 @@ npm run deploy
 
 The quote form submits to `/api/quote` and is handled by the Pages Function in `functions/api/quote.js`.
 
+The form currently collects:
+
+1. Name
+2. Email
+3. Phone number
+4. Service address
+5. Property details
+
 The function requires these Cloudflare Pages secrets:
 
 1. `RESEND_API_KEY`
@@ -79,6 +87,11 @@ The function requires these Cloudflare Pages secrets:
 3. `FROM_EMAIL`
 
 If those secrets are not configured, the site still loads, but quote submissions will not send email.
+
+When configured, the function sends:
+
+1. An internal quote notification to the business inbox
+2. A branded acknowledgment email back to the customer
 
 ### Secret meanings
 
