@@ -4,7 +4,19 @@ const revealItems = document.querySelectorAll('[data-reveal]');
 const quoteForm = document.querySelector('[data-quote-form]');
 const formNote = document.querySelector('[data-form-note]');
 
+function closeMenu() {
+    if (!menuToggle || !navLinks) {
+        return;
+    }
+
+    navLinks.classList.remove('is-open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('menu-open');
+}
+
 if (menuToggle && navLinks) {
+    closeMenu();
+
     menuToggle.addEventListener('click', () => {
         const isOpen = navLinks.classList.toggle('is-open');
         menuToggle.setAttribute('aria-expanded', String(isOpen));
@@ -13,10 +25,18 @@ if (menuToggle && navLinks) {
 
     navLinks.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('is-open');
-            menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.classList.remove('menu-open');
+            closeMenu();
         });
+    });
+
+    window.addEventListener('pageshow', () => {
+        closeMenu();
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 960) {
+            closeMenu();
+        }
     });
 }
 
