@@ -95,6 +95,16 @@ if (quoteForm && formNote) {
                     ? `Thanks, ${displayName}. Your quote request has been sent.`
                     : 'Your quote request has been sent.';
 
+                    // ==========================================
+            // ADDED: Fire Google Ads Conversion on Success
+            // ==========================================
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18439337080/-dRGCKa_0vEcEPjox9hE'
+                });
+            }
+            // ==========================================
+
             quoteForm.reset();
         } catch (error) {
             formNote.textContent = error instanceof Error
